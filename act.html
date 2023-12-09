@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function divideNumbers(a, b) {
+    try {
+        if (b === 0) {
+            throw new Error("Cannot divide by zero");
+        }
+       this.add = a+b,
+       this.sub = a-b,
+       this.div = a/b,
+       this.mul = a*b
+    } catch (error) {
+        console.error("Error:", error.message);
+        return "Error occured!"
+    }
+}
+
+console.log(new divideNumbers(10, 2));
+	</script>
+</body>
+</html>
